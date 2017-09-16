@@ -1,0 +1,88 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box; 
+}
+html{
+ width: 100%;
+ height: 100%;
+}
+body{
+ width: 100%;
+ height: 100%;
+ background-color: white;
+}
+#head{
+ width: 100%;
+ height: 15%;
+ background-color: black;
+}
+.title{
+ position: absolute;
+ top: 5%;
+ font-size: 45px;
+ color: white;
+ left: 50%;
+ transform: translate(-50%,-50%);
+}
+.author{
+ position: absolute;
+ top: 10%;
+ font-size: 30px;
+ color: white;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.qing{
+ margin-top: 3%;
+ margin-left: 2%;
+ font-size: 45px;
+}
+.xiang{
+ margin-top: 1%;
+ margin-left: 2%;
+ font-size: 30px;
+ color: #959595;
+}
+#comments{
+ width: 95%;
+ height: 40%;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+.file{
+ font-size: 15px;
+ margin-top: 2%;
+ margin-left: 2%;
+}
+#upload{
+ margin-top: 2%;
+ margin-bottom: 5%;
+}
+#image{
+ margin-top: 2%;
+ margin-bottom: 8%;
+}
+.over{
+ font-size: 30px;
+ margin-top: 5%;
+ margin-bottom: 2%;
+ text-align: center;
+ color: #959595;
+}
+.submit{
+ text-align: center;
+ margin-top: 3%;
+}
+.footer{
+ background-color: black;
+ width: 100%;
+ height: 8%;
+ margin-top: 4%;
+}
+.footer p{
+ font-size: 30px;
+ text-align: center;
+ color: white;
+ padding-top: 5%;
+}

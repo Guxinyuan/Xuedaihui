@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ <title>中国传媒大学学代会建议／反馈</title>
+ <link rel="stylesheet" type="text/css" href="css/css.css">
+</head>
+<body>
+<div id="head">
+ <p class="title">中传微提案</p>
+ <p class="author">-校学生会网络推广部-</p>
+</div>
+<div id="word">
+ <p class="qing">请写下您的意见或建议</p>
+ <p class="xiang">向学校职工提建议时请具体写出名称／时间／地点</p>
+ <div id="yijian">
+   <textarea id="comments" cols="25" rows="20"></textarea>
+ </div>
+</div>
+<div id="upload">
+ <p class="qing">图片上传</p>
+ <p class="xiang">可以将您所需要提交的图片上传</p>
+ <div  class="file" >
+  <input type="file" class="file" id="file">
+  <div id="image">
+        <img src="images/upload.jpg" alt="" width="300px;"
+        height="300px;">
+    </div>
+ </div> 
+</div>
+<hr />
+<div>
+ <p class="over">感谢您的建议，我们会尽快反馈给学校相关部门。</p>
+</div>
+<div class="submit">
+ <input type="submit" value="提交" style="height: 100px; width: 200px; font-size: 30px;">
+</div>
+<div class="footer">
+ <p>由校学生会网络推广部提供技术支持</p>
+</div>
+ <script type="text/javascript">
+ document.getElementById('file').onchange = function() {
+     var imgFile = this.files[0];
+     var fr = new FileReader();
+     fr.onload = function() {
+         document.getElementById('image').getElementsByTagName('img')[0].src = fr.result;
+     };
+     fr.readAsDataURL(imgFile);
+ };
+ </script>
+</body>
+</html>
